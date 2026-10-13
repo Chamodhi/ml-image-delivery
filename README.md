@@ -78,7 +78,8 @@ Commit or safely preserve local work before changing branches. Keep credentials,
 Replace OWNER, REPOSITORY and DIGEST with your actual values. DIGEST below is the hexadecimal part only; the command already contains `sha256:`. Copy the complete reference rather than its abbreviated display.
 
 ```bash
-docker pull ghcr.io/OWNER/REPOSITORY@sha256:DIGEST
+
+docker pull ghcr.io/chamodhi/ml-image-delivery@sha256:523ff01bf4c09dbd1abe201eec0a468e4a310f6146182a0f1914a72ff46d84f2
 docker run -d --name iris-share -p 127.0.0.1:5000:5000 ghcr.io/OWNER/REPOSITORY@sha256:DIGEST
 docker ps
 docker logs iris-share
